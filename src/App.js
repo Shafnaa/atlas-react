@@ -169,7 +169,7 @@ export default function App() {
             modules={[Navigation]}
             className="mySwiper"
           >
-            <SwiperSlide className="flex flex-col relative">
+            <SwiperSlide className="flex flex-col relative overflow-hidden">
               <img src="/media/news1.png" alt="" className="w-full" />
               <div className="bg-dark text-white flex flex-col items-start p-3 relative">
                 <p className="font-['Gibson_Light'] text-sm">
@@ -183,7 +183,7 @@ export default function App() {
                 find out more
               </button>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-col relative">
+            <SwiperSlide className="flex flex-col relative overflow-hidden">
               <img src="/media/news2.png" alt="" className="w-full" />
               <div className="bg-dark text-white flex flex-col items-start p-3 relative">
                 <p className="font-['Gibson_Light'] text-sm">
@@ -198,7 +198,7 @@ export default function App() {
                 find out more
               </button>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-col relative">
+            <SwiperSlide className="flex flex-col relative overflow-hidden">
               <img src="/media/news3.png" alt="" className="w-full" />
               <div className="bg-dark text-white flex flex-col items-start p-3 relative">
                 <p className="font-['Gibson_Light'] text-sm">
@@ -213,7 +213,7 @@ export default function App() {
                 find out more
               </button>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-col relative">
+            <SwiperSlide className="flex flex-col relative overflow-hidden">
               <img src="/media/news1.png" alt="" className="w-full" />
               <div className="bg-dark text-white flex flex-col items-start p-3 relative">
                 <p className="font-['Gibson_Light'] text-sm">
@@ -227,7 +227,7 @@ export default function App() {
                 find out more
               </button>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-col relative">
+            <SwiperSlide className="flex flex-col relative overflow-hidden">
               <img src="/media/news2.png" alt="" className="w-full" />
               <div className="bg-dark text-white flex flex-col items-start p-3 relative">
                 <p className="font-['Gibson_Light'] text-sm">
@@ -242,7 +242,7 @@ export default function App() {
                 find out more
               </button>
             </SwiperSlide>
-            <SwiperSlide className="flex flex-col relative">
+            <SwiperSlide className="flex flex-col relative overflow-hidden">
               <img src="/media/news3.png" alt="" className="w-full" />
               <div className="bg-dark text-white flex flex-col items-start p-3 relative">
                 <p className="font-['Gibson_Light'] text-sm">
