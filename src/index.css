@@ -1,13 +1,117 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+  font-family: "Gibson Bold Italic";
+  src: url("/public/font/Fontspring-DEMO-gibson-bolditalic.otf");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "Gibson Semibold";
+  src: url("/public/font/Fontspring-DEMO-gibson-semibold.otf");
+}
+
+@font-face {
+  font-family: "Gibson Light";
+  src: url("/public/font/Fontspring-DEMO-gibson-light.otf");
+}
+
+body {
+  font-family: "DM Sans";
+  font-style: normal;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: gray;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* swiper js */
+.swiper {
+  width: 100%;
+  height: 548px;
+}
+
+.swiper-slide {
+  width: 400px;
+  height: 548px;
+  background-color: black !important;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-prev {
+  color: black !important;
+  background-color: white !important;
+  --swiper-navigation-size: 24px;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 100%;
+}
+
+.swiper-button-next {
+  color: black !important;
+  background-color: white !important;
+  --swiper-navigation-size: 24px;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 100%;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
 }
