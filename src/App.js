@@ -93,16 +93,20 @@ export default function App() {
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
+              <div className="-my-6 divide-y divide-gray-500/10 flex flex-col">
+                <div className="space-y-2 py-6 flex flex-col">
                   {navigation.map((item) => (
-                    <a
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </a>
+                    <div className="dropdown">
+                      <button className="dropbtn">
+                        {item.name}
+                        <i className="fa fa-caret-down"></i>
+                      </button>
+                      <div className="dropdown-content">
+                        <a href={item.href}>Link 1</a>
+                        <a href={item.href}>Link 2</a>
+                        <a href={item.href}>Link 3</a>
+                      </div>
+                    </div>
                   ))}
                 </div>
                 <div className="py-6 flex flex-col font-semibold">
@@ -143,7 +147,7 @@ export default function App() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col w-full relative">
+      <div className="flex flex-col w-full relative items-center">
         <div className="flex justify-center">
           <p className="font-bold text-3xl lg:text-5xl flex lg:flex-row flex-col justify-center items-center">
             <span className="italic font-heavy font-['Gibson_Bold_italic'] mx-2">
@@ -152,7 +156,7 @@ export default function App() {
             <span className="font-['Gibson_Semibold']"> IN YOUR WORLD</span>
           </p>
         </div>
-        <div className="my-8 w-full">
+        <div className="my-8 w-5/6 lg:w-full">
           <Swiper
             breakpoints={{
               376: {
