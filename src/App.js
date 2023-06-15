@@ -159,7 +159,7 @@ export default function App() {
         <div className="my-8 w-5/6 lg:w-full">
           <Swiper
             breakpoints={{
-              376: {
+              200: {
                 slidesPerView: 1,
               },
               768: {
